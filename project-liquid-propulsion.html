@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Liquid Propulsion Lead | Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      /* --------- Sidebar to match index/projects ---------- */
+      #header {
+        width: 19em;
+      }
+
+      #header #logo h1#title {
+        font-size: 1.4em;
+      }
+
+      #header #logo p {
+        font-size: 0.95em;
+      }
+
+      #nav ul li a span {
+        font-size: 1.05em !important;
+      }
+
+      #main {
+        margin-left: 19em;
+      }
+
+      @media screen and (max-width: 980px) {
+        #main {
+          margin-left: 0;
+        }
+      }
+
+      /* --------- General text size ---------- */
+      body, p, li {
+        font-size: 1.25em;
+        line-height: 1.7em;
+      }
+
+      /* --------- Project detail card ---------- */
+      section.project-detail {
+        margin: 3em 3em;
+        background: rgba(10, 10, 25, 0.88);
+        padding: 3em 3em;
+        border-radius: 1.5em;
+        box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.6);
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      section.project-detail .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      section.project-detail h2 {
+        font-size: 2.2em;
+        margin-bottom: 0.4em;
+        color: #f7f8ff;
+      }
+
+      section.project-detail h3 {
+        font-size: 1.6em;
+        margin-top: 1.8em;
+        margin-bottom: 0.6em;
+        color: #f7f8ff;
+      }
+
+      section.project-detail p,
+      section.project-detail li {
+        font-size: 1.15em;
+        line-height: 1.7em;
+        color: #f7f8ff;
+      }
+
+      /* Narrower readable width for paragraphs */
+      section.project-detail p {
+        max-width: 60rem;
+        margin: 0.8em auto;
+      }
+
+      /* Role list centered but bullets left-aligned */
+      ul.role-list {
+        margin: 1.2em auto 0 auto;
+        padding-left: 1.5em;
+        width: fit-content;
+        text-align: left;
+      }
+
+      ul.role-list li {
+        margin-bottom: 0.35em;
+      }
+
+      /* Hero video full frame, not cropped */
+      .hero-video {
+        max-width: 1200px;
+        margin: 0 auto 2.5em auto;
+        border-radius: 1em;
+        overflow: hidden;
+      }
+
+      .hero-video video {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 1em;
+      }
+
+      /* Gallery spacing */
+      section.project-detail .row {
+        margin-top: 1.7em;
+      }
+
+      .image.fit img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.6em;
+      }
+
+      /* Centered link buttons with extra spacing */
+      section.project-detail .actions {
+        margin-top: 1.8em;
+        margin-bottom: 0.5em;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+        flex-wrap: wrap;
+      }
+
+      section.project-detail .actions .button {
+        min-width: 220px;
+        text-align: center;
+        font-size: 1.05em;
+        padding: 0.9em 2.1em;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Header (matches index/projects) -->
+    <div id="header">
+
+      <div class="top">
+        <div id="logo">
+          <span class="image avatar48"><img src="images/Air.jpg" alt="" /></span>
+          <h1 id="title">Max Goldstein</h1>
+          <p></p>
+        </div>
+
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="index.html#top" id="top-link">
+                <span class="icon solid fa-home">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html#projects" id="projects-link" class="active">
+                <span class="icon solid fa-th">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" id="internships-link">
+                <span class="icon solid fa-briefcase">Internships</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bottom">
+        <ul class="icons">
+          <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+      <section class="project-detail">
+        <div class="container">
+
+          <!-- HERO VIDEO -->
+          <div class="hero-video">
+            <video autoplay loop muted playsinline>
+              <source src="images/hotfire.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <header>
+            <h2>Liquid Propulsion Lead</h2>
+            <p>Arizona State University's first successfully fired liquid rocket engine.</p>
+          </header>
+
+          <p>
+            Coming off the back of a second explosive hotfire test with our legacy engine, we decided to begin working on
+            an entirely new design. I had the honor as liquid propulsion lead to guide the development of a 350&nbsp;lbf
+            LOX/IPA ablative engine. In addition to steering the project, I took ownership over the design, manufacture,
+            and integration of the unlike triplet impingement injector. We ultimately achieved a nominal two second
+            hotfire.
+          </p>
+
+          <h3>Role &amp; Responsibilities</h3>
+          <ul class="role-list">
+            <li>Led the design of a LOX/IPA ablative liquid rocket engine.</li>
+            <li>Designed unlike triplet impingement injector under tight geometric constraints.</li>
+            <li>Owned CAD, manufacturability redesign, and integration with the test stand.</li>
+            <li>Coordinated fill procedures, flow testing, troubleshooting, and hotfire operations.</li>
+          </ul>
+
+          <!-- LINKS ABOVE IMAGE GALLERY -->
+          <h3>Links</h3>
+          <ul class="actions">
+            <li>
+              <a href="https://drive.google.com/file/d/18kTLajrWUcPZ2Li8NbVqWk6syIPM5LNo/view?usp=sharing" target="_blank" class="button">
+                Engine Detail PDF
+              </a>
+            </li>
+            <li>
+              <a href="https://innercircle.engineering.asu.edu/2025/07/first-liquid-rocket-engine-hotfire-at-asu-marks-historic-milestone/" target="_blank" class="button primary">
+                ASU news article
+              </a>
+            </li>
+            <li>
+              <a href="projects.html#projects" class="button primary">
+                Back to all projects
+              </a>
+            </li>
+          </ul>
+
+          <h3>Gallery</h3>
+
+          <!-- Top bigger images -->
+          <div class="row">
+            <div class="col-6 col-12-mobile">
+              <span class="image fit">
+                <img src="images/injectorsection.png" alt="Engine CAD" />
+              </span>
+            </div>
+
+            <div class="col-6 col-12-mobile">
+              <span class="image fit">
+                <img src="images/Fill.png" alt="Injector detail" />
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 col-12-mobile" style="margin:0 auto;">
+              <span class="image fit">
+                <img src="images/team.JPG" alt="Hotfire test team" />
+              </span>
+            </div>
+          </div>
+
+          <!-- Smaller bottom images -->
+          <div class="row">
+            <div class="col-4 col-12-mobile">
+              <span class="image fit">
+                <img src="images/Machined.jpg" alt="Machined parts" />
+              </span>
+            </div>
+
+            <div class="col-4 col-12-mobile">
+              <span class="image fit">
+                <img src="images/Workingonengine.JPG" alt="Working on engine" />
+              </span>
+            </div>
+
+            <div class="col-4 col-12-mobile">
+              <span class="image fit">
+                <img src="images/Spray.PNG" alt="Spray test" />
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

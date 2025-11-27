@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Projects | Prologue</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      /* --------------------------------------------------
+         SIDEBAR TEXT SIZE + WIDTH (MATCH INDEX)
+      -------------------------------------------------- */
+     /* Keep images behaving normally */
+/* Images stay normal */
+.project-gallery .image.fit img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Videos fill container, no black bars, no cropping */
+.project-gallery .image.fit video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;        /* removes black bars */
+    border-radius: 6px;
+    background: none;         /* prevent visible backgrounds */
+    max-height: 900px;        /* allow full height so content isn't cut off */
+}
+
+
+     
+     
+      #header {
+        width: 19em; /* wider sidebar */
+      }
+
+      #header #logo h1#title {
+        font-size: 1.4em;
+      }
+
+      #header #logo p {
+        font-size: 0.95em;
+      }
+
+      #nav ul li a span {
+        font-size: 1.05em !important;
+      }
+
+      /* Main content shift to match larger sidebar */
+      #main {
+        margin-left: 19em;
+      }
+
+      /* --------------------------------------------------
+         GENERAL TEXT SIZE (MATCH INDEX BODY SIZE)
+      -------------------------------------------------- */
+      body, p, li {
+        font-size: 1.45em;
+        line-height: 1.65em;
+      }
+
+      /* --------------------------------------------------
+         PROJECT CARD / LINK STYLING
+      -------------------------------------------------- */
+      .project-block a.project-link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .project-block a.project-link:hover {
+        text-decoration: none;
+      }
+
+      .project-block:hover {
+        cursor: pointer;
+        transform: translateY(-4px);
+        transition: transform 0.15s ease;
+      }
+
+      /* --------------------------------------------------
+         VIDEO SIZING
+      -------------------------------------------------- */
+      .video-fit {
+        width: 100%;
+        height: auto;
+        border-radius: 0.7em;
+        display: block;
+      }
+
+      .video-fit,
+      .project-detail video,
+      .project-gallery video {
+        width: 100%;
+        height: auto;
+        max-height: 450px;   /* adjust as preferred */
+        object-fit: cover;
+        border-radius: 6px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* --------------------------------------------------
+         RESPONSIVE
+      -------------------------------------------------- */
+      @media screen and (max-width: 980px) {
+        #main {
+          margin-left: 0;
+        }
+        #header {
+          width: 100%;
+          position: relative;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+
+    <!-- Header -->
+    <div id="header">
+
+      <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"><img src="images/main.jpg" alt="" /></span>
+          <h1 id="title">Max Goldstein</h1>
+          <p></p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+            <li><a href="projects.html" id="projects-link" class="active"><span class="icon solid fa-th">Projects</span></a></li>
+            <li><a href="internships.html" id="internships-link"><span class="icon solid fa-briefcase">Internships</span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+   
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Projects -->
+      <section id="projects" class="two">
+        <div class="container">
+
+          <header>
+            <h2>Projects</h2>
+            <p>A selection of projects showcasing my work. Each one includes a short overview, a small image gallery, and a link to view more.</p>
+          </header>
+
+          <!-- Project 1 -->
+          <article class="project-block">
+            <a href="project-liquid-propulsion.html" class="project-link">
+              <header>
+                <h3>Liquid Propulsion Lead</h3>
+                <p class="subtitle">Led design of Arizona State University's first successfully fired liquid rocket engine.</p>
+              </header>
+
+              <!-- Gallery -->
+              <div class="row project-gallery">
+
+                <!-- Left image (smaller) -->
+                <div class="col-4 col-12-mobile">
+                  <span class="image fit">
+                    <img src="images/holding.png" alt="Project 1 screenshot 1" />
+                  </span>
+                </div>
+
+                <!-- Right image (larger) -->
+                <div class="col-8 col-12-mobile">
+                  <span class="image fit">
+                    <img src="images/team.JPG" alt="Project 1 screenshot 3" />
+                  </span>
+                </div>
+
+              </div>
+
+              <!-- Full-width video row -->
+              <div class="row project-gallery" style="margin-top: 1.5em;">
+                <div class="col-12">
+                  <span class="image fit">
+                    <video autoplay loop muted playsinline class="video-fit">
+                      <source src="images/hotfire.mp4" type="video/mp4" />
+                    </video>
+                  </span>
+                </div>
+              </div>
+
+              <ul class="actions">
+                <li>
+                  <span class="button">View project details</span>
+                </li>
+              </ul>
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-block">
+            <a href="project-AHPR.html" class="project-link">
+              <header>
+                <h3>Advanced High Powered Rocketry Lead</h3>
+                <p class="subtitle">Two Stage Solid Rocket to 44,000 feet at Mach 2.7</p>
+              </header>
+
+              <div class="row project-gallery">
+
+                <!-- First image -->
+                <div class="col-4 col-12-mobile">
+                  <span class="image fit">
+                    <img src="images/Iwo.JPG" alt="Project 2 screenshot 1" />
+                  </span>
+                </div>
+
+                <!-- Second: video -->
+                <div class="col-4 col-12-mobile">
+                  <span class="image fit">
+                    <video autoplay loop muted playsinline class="video-fit">
+                      <source src="images/KrakenLaunch.mov" type="video/mp4" />
+                    </video>
+                  </span>
+                </div>
+
+                <!-- Third image -->
+                <div class="col-4 col-12-mobile">
+                  <span class="image fit">
+                    <img src="images/Krakenfillets.JPG" alt="Project 2 screenshot 3" />
+                  </span>
+                </div>
+
+              </div>
+
+              <ul class="actions">
+                <li>
+                  <span class="button">View project details</span>
+                </li>
+              </ul>
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-block">
+            <a href="AMRAAM.html" class="project-link">
+              <header>
+                <h3>Large Roll Controlled Rocket</h3>
+                <p class="subtitle">Acuated Canards to attempt to acheive roll control for honors thesis</p>
+              </header>
+
+           <h3>Gallery</h3>
+
+<!-- STACKED TOP IMAGES -->
+<div class="row project-gallery" style="margin-top: 1.5em; display: flex; flex-direction: column; gap: 2em;">
+
+  <!-- First image -->
+  <div class="col-12">
+    <span class="image fit">
+      <img src="images/AMRAAM_3ppl.HEIC" alt="Team with rocket" />
+    </span>
+  </div>
+
+  <!-- Second image -->
+  <div class="col-12">
+    <span class="image fit">
+      <img src="images/onboard.png" alt="Onboard view" />
+    </span>
+  </div>
+
+</div>
+
+<!-- EXISTING VIDEO BELOW -->
+<div class="row project-gallery" style="margin-top: 2em;">
+  <div class="col-12">
+    <span class="image fit">
+      <video autoplay loop muted playsinline class="video-fit">
+        <source src="images/Rolling.mov" type="video/mp4" />
+      </video>
+    </span>
+  </div>
+</div>
+
+
+              <p></p>
+
+              <ul class="actions">
+                <li>
+                  <span class="button">View project details</span>
+                </li>
+              </ul>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

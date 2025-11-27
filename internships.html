@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Internships | Prologue</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      /* --------------------------------------------------
+         SIDEBAR TEXT SIZE + WIDTH (MATCH INDEX)
+      -------------------------------------------------- */
+      #header {
+        width: 19em; /* wider sidebar */
+      }
+
+      #header #logo h1#title {
+        font-size: 1.4em;
+      }
+
+      #header #logo p {
+        font-size: 0.95em;
+      }
+
+      #nav ul li a span {
+        font-size: 1.05em !important;
+      }
+
+      /* Main content shift to match larger sidebar */
+      #main {
+        margin-left: 19em;
+      }
+
+      @media screen and (max-width: 980px) {
+        #main {
+          margin-left: 0;
+        }
+      }
+
+      /* --------------------------------------------------
+         GENERAL TEXT SIZE (MATCH INDEX)
+      -------------------------------------------------- */
+      body, p, li {
+        font-size: 1.45em;
+        line-height: 1.65em;
+      }
+
+      section#internships h2 {
+        font-size: 2.3em;
+      }
+
+      section#internships .subtitle {
+        font-size: 1.1em;
+        opacity: 0.85;
+      }
+
+      /* Slightly larger headings inside internships */
+      section#internships h3 {
+        font-size: 1.7em;
+      }
+
+      /* Keep gallery images nicely rounded */
+      .project-block .image.fit img {
+        border-radius: 0.6em;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Header -->
+    <div id="header">
+
+      <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"><img src="images/main.jpg" alt="" /></span>
+          <h1 id="title">Max Goldstein</h1>
+          <p></p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+            <li><a href="projects.html" id="projects-link"><span class="icon solid fa-th">Projects</span></a></li>
+            <li><a href="internships.html" id="internships-link" class="active"><span class="icon solid fa-briefcase">Internships</span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Internships -->
+      <section id="internships" class="two">
+        <div class="container">
+
+          <header>
+            <h2>Internships</h2>
+            <p>Professional experience where I’ve applied what I’m learning to real-world problems.</p>
+          </header>
+
+          <!-- Internship 1 -->
+          <article class="project-block">
+            <header>
+              <h3>United States Air Force, Civilian Service – Propulsion Engineer Intern</h3>
+              <p class="subtitle">Edwards Air Force Base, CA • Summer 2024</p>
+            </header>
+
+            <!-- Gallery -->
+            <div class="row project-gallery">
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/B2-1.JPG" alt="Edwards AFB Interns" />
+                </span>
+              </div>
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/T7.jpg" alt="T-7 Red Hawk" />
+                </span>
+              </div>
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/F404.jpg" alt="General Electric F404 Engine" />
+                </span>
+              </div>
+            </div>
+
+            <p>
+              During my internship at Edwards AFB, I developed a Python program to visualize angle of attack and sideslip limits as a function of Mach number for the T-7 Red Hawk.
+              The tool generated coffin plots of aerodynamic limits across flight conditions, giving engineers a faster way to review and compare test data during envelope expansion.
+              I also analyzed engine vibration measurements by applying analytical models to instrument readings to validate data received from third-party software.
+              I was present in the control room during manned flight tests, where I saw firsthand the level of responsibility placed on engineers when their systems are intended to carry people.
+            </p>
+          </article>
+
+          <!-- Internship 2 -->
+          <article class="project-block">
+            <header>
+              <h3>Nammo Defense Systems – Shoulder Fired Systems Project Engineer Intern</h3>
+              <p class="subtitle">Mesa, AZ • Summer 2023</p>
+            </header>
+
+            <div class="row project-gallery">
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/M72.png" alt="M72 launcher" />
+                </span>
+              </div>
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/Burst.jpg" alt="Launcher burst test" />
+                </span>
+              </div>
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/guywithm72.jpg" alt="Firing test" />
+                </span>
+              </div>
+            </div>
+
+            <p>
+              I was a Project Engineer Intern at Nammo Defense Systems, working on the M72 FFE shoulder-fired launcher.
+              I tested a more cost-effective alternative material for launcher components by conducting tensile and fluid compatibility tests and performing statistical data analysis.
+              I also ran ANSYS structural simulations to validate that prototype parts would not exceed yield stress, and performed tolerance stackups while correcting engineering drawings through formal change proposals.
+            </p>
+          </article>
+
+          <!-- Internship 3 -->
+          <article class="project-block">
+            <header>
+              <h3>BlackBar Engineering – Engineering Intern</h3>
+              <p class="subtitle">Sierra Vista, AZ • Summer 2022</p>
+            </header>
+
+            <div class="row project-gallery">
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/Storm-UAS.jpg" alt="Storm UAS" />
+                </span>
+              </div>
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/Ross.png" alt="Ground station / operations" />
+                </span>
+              </div>
+              <div class="col-4 col-12-mobile">
+                <span class="image fit">
+                  <img src="images/Quicklook.png" alt="Quicklook interface" />
+                </span>
+              </div>
+            </div>
+
+            <p>
+              At BlackBar Engineering, I assembled the tail boom and wing spars and vinyl-wrapped the wings of fixed-wing drones.
+              I soldered and integrated electrical components for GPS and flight-computer test apparatuses, and 3D-modeled and printed prototypes of a thermal camera and battery housing.
+              Working with this small team gave me an early, hands-on understanding of the aerospace business and end-to-end system integration.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

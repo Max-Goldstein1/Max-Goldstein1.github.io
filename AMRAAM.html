@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Roll Controlled Rocket | Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      /* --------------------------------------------------
+         SIDEBAR MATCHES INDEX (BIGGER TEXT)
+      -------------------------------------------------- */
+      section.project-detail ul.actions {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    margin: 2.5em 0 0 0 !important;
+    padding: 0;
+  }
+
+  section.project-detail ul.actions li {
+    margin: 0 !important;
+  }
+
+  section.project-detail ul.actions .button {
+    min-width: 240px;
+    padding: 1em 2.3em;
+    font-size: 1.15em;
+  }
+      #header {
+        width: 19em;
+      }
+
+      #main {
+        margin-left: 19em;
+      }
+
+      @media screen and (max-width: 980px) {
+        #main { margin-left: 0; }
+      }
+
+      #logo h1 {
+        font-size: 1.4em !important;
+      }
+
+      #logo p {
+        font-size: 1.05em !important;
+      }
+
+      #nav ul li a span,
+      #nav ul li a {
+        font-size: 1.15em !important;
+      }
+
+      /* --------------------------------------------------
+         PROJECT DETAIL CARD
+      -------------------------------------------------- */
+      section.project-detail {
+        margin: 3em 3em;
+        background: rgba(10, 10, 25, 0.88);
+        padding: 3em 3em;
+        border-radius: 1.5em;
+        box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.6);
+        box-sizing: border-box;
+      }
+
+      section.project-detail .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      /* Header text */
+      section.project-detail h2 {
+        font-size: 2.4em;
+        text-align: center;
+        color: #f7f8ff;
+      }
+
+      section.project-detail header > p {
+        font-size: 1.25em;
+        text-align: center;
+        color: #f7f8ff;
+        max-width: 65rem;
+        margin: 0.5em auto 1em auto;
+      }
+
+      /* Body text */
+      section.project-detail p,
+      section.project-detail li {
+        font-size: 1.25em;
+        line-height: 1.65em;
+        color: #f7f8ff;
+        max-width: 65rem;
+        margin: 0.75em auto;
+        text-align: center;
+      }
+
+      section.project-detail h3 {
+        font-size: 1.8em;
+        text-align: center;
+        color: #f7f8ff;
+        margin-top: 1.6em;
+      }
+
+      /* Bullet list */
+      ul.role-list {
+        margin: 1em auto;
+        width: fit-content;
+        text-align: left;
+        padding-left: 1.2em;
+      }
+
+      ul.role-list li {
+        font-size: 1.2em;
+        margin-bottom: 0.3em;
+      }
+
+      /* Buttons */
+      ul.actions {
+        justify-content: center;
+        margin-top: 2.5em !important;
+      }
+
+      ul.actions li {
+        margin: 0 1.6em !important;
+      }
+
+      ul.actions .button {
+        min-width: 240px;
+        padding: 1em 2.3em;
+        font-size: 1.15em;
+        text-align: center;
+      }
+
+      /* Gallery images */
+      .image.fit img,
+      .image.fit video {
+        width: 100%;
+        height: auto;
+        border-radius: 0.6em;
+        display: block;
+      }
+
+      .row {
+        margin-top: 2.2em;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Header -->
+    <div id="header">
+      <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"><img src="images/main.jpg" alt="" /></span>
+          <h1 id="title">Max Goldstein</h1>
+          <p></p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+            <li><a href="projects.html#projects" id="projects-link" class="active"><span class="icon solid fa-th">Projects</span></a></li>
+            <li><a href="internships.html" id="internships-link"><span class="icon solid fa-briefcase">Internships</span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+   
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+      <section class="project-detail">
+        <div class="container">
+
+          <header>
+            <h2>Roll Controlled Rocket</h2>
+            <p>An attempt to achieve roll stabilization of a large high-powered rocket through actuated canards.</p>
+          </header>
+
+          <p>
+            My friend and I built and twice launched an 8-foot scale model of an AIM-120 AMRAAM with actuated canards for our Barrett Honors Thesis.
+            SDR's avionics team had developed a flight computer capable of such a task and we wanted to take up the challenge.
+            Both launches failed to achieve roll authority due to airframe structural failures, but the recovery system performed properly each time.
+            The project provided major lessons in composite manufacturing and safe high-powered flight operations.
+          </p>
+
+          <h3>Role & Responsibilities</h3>
+          <ul class="role-list">
+            <li>Designed and built wet-layup fiberglass airframe and hand-cut fiberglass fins.</li>
+            <li>Designed nosecone fairing housing two downward-facing onboard cameras.</li>
+            <li>Integrated avionics including redundant parachute-deployment computers and a custom roll-control computer.</li>
+            <li>Packed recovery system and led launch operations.</li>
+          </ul>
+
+          <h3>Links</h3>
+          <ul class="actions">
+            <li>
+              <a href="https://drive.google.com/file/d/1W_7QoaBTNPmu6j5zC7ysJE2AoIyTH67F/view?usp=sharing" target="_blank" class="button">Thesis Report</a>
+            </li>
+            <li>
+              <a href="projects.html#projects" class="button primary">Back to all projects</a>
+            </li>
+          </ul>
+
+          <h3>Gallery</h3>
+
+          <!-- First full-width image -->
+          <div class="row">
+            <div class="col-12">
+              <span class="image fit">
+                <img src="images/AMRAAM_3ppl.HEIC" alt="Team with rocket" />
+              </span>
+            </div>
+          </div>
+
+          <!-- Second full-width image -->
+          <div class="row">
+            <div class="col-12">
+              <span class="image fit">
+                <img src="images/Prelaunch.png" alt="Prelaunch setup" />
+              </span>
+            </div>
+          </div>
+
+          <!-- Third full-width image -->
+          <div class="row">
+            <div class="col-12">
+              <span class="image fit">
+                <img src="images/onboard.png" alt="Onboard view" />
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

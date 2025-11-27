@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Home | Prologue</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      /* --------------------------------------------------
+         SIDEBAR TEXT SIZE + WIDTH
+      -------------------------------------------------- */
+      #header {
+        width: 19em; /* wider sidebar */
+      }
+
+      #header #logo h1#title {
+        font-size: 1.4em;
+      }
+
+      #header #logo p {
+        font-size: 0.95em;
+      }
+
+      #nav ul li a span {
+        font-size: 1.05em !important;
+      }
+
+      /* Main content shift to match larger sidebar */
+      #main {
+        margin-left: 19em;
+      }
+
+      /* --------------------------------------------------
+         GENERAL TEXT SIZE ACROSS SITE
+      -------------------------------------------------- */
+      body, p, li {
+        font-size: 1.45em;
+        line-height: 1.65em;
+      }
+
+      /* --------------------------------------------------
+         INTRO / HERO TEXT (NAME + PARAGRAPH)
+      -------------------------------------------------- */
+      #top h2.alt {
+        font-size: 3.4em !important; /* Larger name */
+        margin-bottom: 0.5em;
+      }
+
+      #top p {
+        font-size: 1.35em !important; /* Intro paragraph */
+        line-height: 1.75em;
+        max-width: 60rem;
+        margin: 0.5em auto 1em auto;
+      }
+
+      #top .button {
+        font-size: 1.15em;
+        padding: 0.9em 2.2em;
+      }
+
+      /* --------------------------------------------------
+         HIGHLIGHTS LAYOUT — STACKED
+      -------------------------------------------------- */
+      #highlights .row {
+        display: block;
+      }
+
+      #highlights .row > div {
+        width: 100%;
+        margin-bottom: 3em;
+      }
+
+      #highlights .item .image.fit img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0.6em;
+      }
+
+      /* --------------------------------------------------
+         HIGHLIGHT CARD TEXT (BIGGER)
+      -------------------------------------------------- */
+      #highlights .item p {
+        font-size: 1.25em;
+        line-height: 1.65em;
+      }
+
+      #highlights .item header h3 {
+        font-size: 1.7em;
+      }
+
+    </style>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Header -->
+    <div id="header">
+
+      <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"><img src="images/main.jpg" alt="" /></span>
+          <h1 id="title">Max Goldstein</h1>
+          <p></p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+            <li><a href="projects.html" id="projects-link"><span class="icon solid fa-th">Projects</span></a></li>
+            <li><a href="internships.html" id="internships-link"><span class="icon solid fa-briefcase">Internships</span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- HERO / INTRO -->
+      <section id="top" class="one dark cover">
+        
+        <div class="container">
+
+          <header>
+            <h2 class="alt">Hi! I'm <strong>Max Goldstein</strong>.</h2>
+            <p>
+              I am a first year Aerospace Engineering Masters student at Georgia Tech. I previously earned my bachelor’s at Arizona State University,
+              where I led Sun Devil Rocketry and oversaw the design and successful hotfire of ASU’s first liquid rocket engine.<br>
+              My experience spans liquid propulsion system design, CFD modeling, high-power solid rocket development and launch, and 6-DOF simulation.
+            </p>
+          </header>
+
+          <footer>
+            <a href="projects.html" class="button">View Projects</a>
+            <a href="internships.html" class="button">View Internships</a>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section id="highlights" class="two">
+        <div class="container">
+
+          <header>
+            <h2>Highlights</h2>
+          </header>
+
+          <p>A quick look at some of the work I’ve done. You can see full details on the Projects and Internships pages.</p>
+
+          <div class="row">
+
+            <!-- Liquid Propulsion Lead -->
+            <div>
+              <article class="item">
+                <a href="project-liquid-propulsion.html" class="image fit">
+                  <img src="images/holding.png" alt="Liquid Propulsion Lead preview">
+                </a>
+                <header>
+                  <h3>Liquid Propulsion Lead</h3>
+                </header>
+                <p>
+                  Led the design and successful hotfire of a 350 lbf LOX/IPA ablative engine, including ownership of the unlike triplet injector and
+                  test stand integration.
+                </p>
+                <a href="project-liquid-propulsion.html" class="button small">View project</a>
+              </article>
+            </div>
+
+            <!-- Internship Experience -->
+            <div>
+              <article class="item">
+                <a href="internships.html" class="image fit">
+                  <img src="images/B2-1.JPG" alt="Internship Experience">
+                </a>
+                <header>
+                  <h3>Internship Experience</h3>
+                </header>
+                <p>
+                  Hands-on engineering at Edwards AFB, Nammo Defense Systems, and BlackBar Engineering, working on flight test tools, shoulder-fired
+                  launchers, and unmanned aircraft systems.
+                </p>
+                <a href="internships.html" class="button small">See internships</a>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT / MISC -->
+      <section id="about" class="three">
+        <div class="container">
+
+          <header>
+            <h2>Misc</h2>
+          </header>
+
+          <a href="#" class="image featured"><img src="images/minimax.PNG" alt=""></a>
+
+          <p>My first experience with cryogenics</p>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="four">
+        <div class="container">
+          <header>
+            <h2>Contact</h2>
+          </header>
+          <p>Feel free to reach out via email or connect on LinkedIn.</p>
+          <ul class="actions">
+            <li><a href="mailto:mgoldstein42@gatech.edu" class="button"><span class="icon solid fa-envelope"></span>&nbsp; Email</a></li>
+            <li><a href="https://www.linkedin.com/in/max-goldstein27"
+" target="_blank" class="button"><span class="icon brands fa-linkedin"></span>&nbsp; LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+  
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
