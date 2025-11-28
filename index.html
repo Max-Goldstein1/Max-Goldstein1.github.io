@@ -8,10 +8,17 @@
 
     <style>
       /* --------------------------------------------------
-         SIDEBAR TEXT SIZE + WIDTH
+         SIDEBAR TEXT SIZE + WIDTH (DESKTOP ONLY)
       -------------------------------------------------- */
-      #header {
-        width: 19em; /* wider sidebar */
+      @media screen and (min-width: 981px) {
+        #header {
+          width: 19em; /* wider sidebar */
+        }
+
+        /* Main content shift to match larger sidebar */
+        #main {
+          margin-left: 19em;
+        }
       }
 
       #header #logo h1#title {
@@ -26,37 +33,32 @@
         font-size: 1.05em !important;
       }
 
-      /* Main content shift to match larger sidebar */
-      #main {
-        margin-left: 19em;
-      }
-
       /* --------------------------------------------------
          GENERAL TEXT SIZE ACROSS SITE
       -------------------------------------------------- */
       body, p, li {
-        font-size: 1.45em;
-        line-height: 1.65em;
+        font-size: 1.05em;
+        line-height: 1.6em;
       }
 
       /* --------------------------------------------------
          INTRO / HERO TEXT (NAME + PARAGRAPH)
       -------------------------------------------------- */
       #top h2.alt {
-        font-size: 3.4em !important; /* Larger name */
+        font-size: 2.6em !important; /* slightly larger name */
         margin-bottom: 0.5em;
       }
 
       #top p {
-        font-size: 1.35em !important; /* Intro paragraph */
-        line-height: 1.75em;
+        font-size: 1.1em !important; /* intro paragraph */
+        line-height: 1.7em;
         max-width: 60rem;
         margin: 0.5em auto 1em auto;
       }
 
       #top .button {
-        font-size: 1.15em;
-        padding: 0.9em 2.2em;
+        font-size: 1.05em;
+        padding: 0.8em 2em;
       }
 
       /* --------------------------------------------------
@@ -79,17 +81,16 @@
       }
 
       /* --------------------------------------------------
-         HIGHLIGHT CARD TEXT (BIGGER)
+         HIGHLIGHT CARD TEXT
       -------------------------------------------------- */
       #highlights .item p {
-        font-size: 1.25em;
-        line-height: 1.65em;
+        font-size: 1.05em;
+        line-height: 1.6em;
       }
 
       #highlights .item header h3 {
-        font-size: 1.7em;
+        font-size: 1.4em;
       }
-
     </style>
   </head>
 
@@ -133,7 +134,6 @@
 
       <!-- HERO / INTRO -->
       <section id="top" class="one dark cover">
-        
         <div class="container">
 
           <header>
@@ -227,15 +227,12 @@
           <p>Feel free to reach out via email or connect on LinkedIn.</p>
           <ul class="actions">
             <li><a href="mailto:mgoldstein42@gatech.edu" class="button"><span class="icon solid fa-envelope"></span>&nbsp; Email</a></li>
-            <li><a href="https://www.linkedin.com/in/max-goldstein27"
-" target="_blank" class="button"><span class="icon brands fa-linkedin"></span>&nbsp; LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="button"><span class="icon brands fa-linkedin"></span>&nbsp; LinkedIn</a></li>
           </ul>
         </div>
       </section>
 
     </div>
-
-  
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

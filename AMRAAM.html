@@ -7,56 +7,36 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
-      /* --------------------------------------------------
-         SIDEBAR MATCHES INDEX (BIGGER TEXT)
-      -------------------------------------------------- */
-      section.project-detail ul.actions {
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
-    gap: 2em;
-    width: 100%;
-    margin: 2.5em 0 0 0 !important;
-    padding: 0;
-  }
+      /* --------- Sidebar to match index/liquid page (DESKTOP ONLY) ---------- */
+      @media screen and (min-width: 981px) {
+        #header {
+          width: 19em;
+        }
 
-  section.project-detail ul.actions li {
-    margin: 0 !important;
-  }
-
-  section.project-detail ul.actions .button {
-    min-width: 240px;
-    padding: 1em 2.3em;
-    font-size: 1.15em;
-  }
-      #header {
-        width: 19em;
+        #main {
+          margin-left: 19em;
+        }
       }
 
-      #main {
-        margin-left: 19em;
+      #header #logo h1#title {
+        font-size: 1.4em;
       }
 
-      @media screen and (max-width: 980px) {
-        #main { margin-left: 0; }
+      #header #logo p {
+        font-size: 0.95em;
       }
 
-      #logo h1 {
-        font-size: 1.4em !important;
-      }
-
-      #logo p {
+      #nav ul li a span {
         font-size: 1.05em !important;
       }
 
-      #nav ul li a span,
-      #nav ul li a {
-        font-size: 1.15em !important;
+      /* --------- General text size ---------- */
+      body, p, li {
+        font-size: 1.1em;
+        line-height: 1.7em;
       }
 
-      /* --------------------------------------------------
-         PROJECT DETAIL CARD
-      -------------------------------------------------- */
+      /* --------- Project detail card ---------- */
       section.project-detail {
         margin: 3em 3em;
         background: rgba(10, 10, 25, 0.88);
@@ -64,6 +44,7 @@
         border-radius: 1.5em;
         box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.6);
         box-sizing: border-box;
+        color: #f7f8ff;
       }
 
       section.project-detail .container {
@@ -72,87 +53,90 @@
         margin: 0 auto;
       }
 
-      /* Header text */
       section.project-detail h2 {
-        font-size: 2.4em;
+        font-size: 2.2em;
+        text-align: center;
+        margin-bottom: 0.4em;
+        color: #f7f8ff;
+      }
+
+      section.project-detail h3 {
+        font-size: 1.6em;
+        margin-top: 1.8em;
+        margin-bottom: 0.6em;
         text-align: center;
         color: #f7f8ff;
       }
 
       section.project-detail header > p {
-        font-size: 1.25em;
+        font-size: 1.1em;
+        opacity: 0.95;
         text-align: center;
-        color: #f7f8ff;
-        max-width: 65rem;
+        max-width: 60rem;
         margin: 0.5em auto 1em auto;
       }
 
-      /* Body text */
       section.project-detail p,
       section.project-detail li {
-        font-size: 1.25em;
-        line-height: 1.65em;
+        font-size: 1.05em;
+        line-height: 1.7em;
         color: #f7f8ff;
-        max-width: 65rem;
-        margin: 0.75em auto;
+      }
+
+      /* Narrower readable width for main paragraphs */
+      section.project-detail p {
+        max-width: 60rem;
+        margin: 0.8em auto;
         text-align: center;
       }
 
-      section.project-detail h3 {
-        font-size: 1.8em;
-        text-align: center;
-        color: #f7f8ff;
-        margin-top: 1.6em;
-      }
-
-      /* Bullet list */
+      /* Role list centered but bullets left-aligned */
       ul.role-list {
-        margin: 1em auto;
+        margin: 1.2em auto 0 auto;
+        padding-left: 1.5em;
         width: fit-content;
         text-align: left;
-        padding-left: 1.2em;
       }
 
       ul.role-list li {
-        font-size: 1.2em;
-        margin-bottom: 0.3em;
+        margin-bottom: 0.35em;
       }
 
-      /* Buttons */
-      ul.actions {
+      /* Buttons – centered with spacing (matches other project pages) */
+      section.project-detail .actions {
+        margin-top: 1.8em;
+        margin-bottom: 0.5em;
+        display: flex;
         justify-content: center;
-        margin-top: 2.5em !important;
+        gap: 1.5em;
+        flex-wrap: wrap;
       }
 
-      ul.actions li {
-        margin: 0 1.6em !important;
-      }
-
-      ul.actions .button {
-        min-width: 240px;
-        padding: 1em 2.3em;
-        font-size: 1.15em;
+      section.project-detail .actions .button {
+        min-width: 220px;
         text-align: center;
+        font-size: 1.05em;
+        padding: 0.9em 2.1em;
       }
 
-      /* Gallery images */
+      /* Gallery spacing */
+      section.project-detail .row {
+        margin-top: 1.7em;
+      }
+
       .image.fit img,
       .image.fit video {
         width: 100%;
         height: auto;
-        border-radius: 0.6em;
         display: block;
-      }
-
-      .row {
-        margin-top: 2.2em;
+        border-radius: 0.6em;
       }
     </style>
   </head>
 
   <body class="is-preload">
 
-    <!-- Header -->
+    <!-- Header (same behavior as index/liquid) -->
     <div id="header">
       <div class="top">
 
@@ -166,20 +150,39 @@
         <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-            <li><a href="projects.html#projects" id="projects-link" class="active"><span class="icon solid fa-th">Projects</span></a></li>
-            <li><a href="internships.html" id="internships-link"><span class="icon solid fa-briefcase">Internships</span></a></li>
+            <li>
+              <a href="index.html#top" id="top-link">
+                <span class="icon solid fa-home">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html#projects" id="projects-link" class="active">
+                <span class="icon solid fa-th">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" id="internships-link">
+                <span class="icon solid fa-briefcase">Internships</span>
+              </a>
+            </li>
           </ul>
         </nav>
 
       </div>
 
-   
       <div class="bottom">
         <!-- Social Icons -->
         <ul class="icons">
-          <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-          <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin">
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope">
+              <span class="label">Email</span>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -203,7 +206,7 @@
             The project provided major lessons in composite manufacturing and safe high-powered flight operations.
           </p>
 
-          <h3>Role & Responsibilities</h3>
+          <h3>Role &amp; Responsibilities</h3>
           <ul class="role-list">
             <li>Designed and built wet-layup fiberglass airframe and hand-cut fiberglass fins.</li>
             <li>Designed nosecone fairing housing two downward-facing onboard cameras.</li>
@@ -214,10 +217,14 @@
           <h3>Links</h3>
           <ul class="actions">
             <li>
-              <a href="https://drive.google.com/file/d/1W_7QoaBTNPmu6j5zC7ysJE2AoIyTH67F/view?usp=sharing" target="_blank" class="button">Thesis Report</a>
+              <a href="https://drive.google.com/file/d/1W_7QoaBTNPmu6j5zC7ysJE2AoIyTH67F/view?usp=sharing" target="_blank" class="button">
+                Thesis Report
+              </a>
             </li>
             <li>
-              <a href="projects.html#projects" class="button primary">Back to all projects</a>
+              <a href="projects.html#projects" class="button primary">
+                Back to all projects
+              </a>
             </li>
           </ul>
 

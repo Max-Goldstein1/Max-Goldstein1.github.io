@@ -5,33 +5,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <style>
       /* --------------------------------------------------
-         SIDEBAR TEXT SIZE + WIDTH (MATCH INDEX)
+         SIDEBAR TEXT SIZE + WIDTH (DESKTOP ONLY)
+         — copied from index.html
       -------------------------------------------------- */
-     /* Keep images behaving normally */
-/* Images stay normal */
-.project-gallery .image.fit img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-}
+      @media screen and (min-width: 981px) {
+        #header {
+          width: 19em; /* wider sidebar */
+        }
 
-/* Videos fill container, no black bars, no cropping */
-.project-gallery .image.fit video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;        /* removes black bars */
-    border-radius: 6px;
-    background: none;         /* prevent visible backgrounds */
-    max-height: 900px;        /* allow full height so content isn't cut off */
-}
-
-
-     
-     
-      #header {
-        width: 19em; /* wider sidebar */
+        /* Main content shift to match larger sidebar */
+        #main {
+          margin-left: 19em;
+        }
       }
 
       #header #logo h1#title {
@@ -46,22 +34,19 @@
         font-size: 1.05em !important;
       }
 
-      /* Main content shift to match larger sidebar */
-      #main {
-        margin-left: 19em;
-      }
-
       /* --------------------------------------------------
-         GENERAL TEXT SIZE (MATCH INDEX BODY SIZE)
+         GENERAL TEXT SIZE ACROSS SITE (match index)
       -------------------------------------------------- */
       body, p, li {
-        font-size: 1.45em;
-        line-height: 1.65em;
+        font-size: 1.05em;
+        line-height: 1.6em;
       }
 
       /* --------------------------------------------------
-         PROJECT CARD / LINK STYLING
+         PROJECT PAGE-SPECIFIC STYLES
       -------------------------------------------------- */
+
+      /* Project cards clickable */
       .project-block a.project-link {
         display: block;
         color: inherit;
@@ -78,45 +63,32 @@
         transition: transform 0.15s ease;
       }
 
-      /* --------------------------------------------------
-         VIDEO SIZING
-      -------------------------------------------------- */
+      /* Project gallery images */
+      .project-gallery .image.fit img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.6em;
+        display: block;
+      }
+
+      /* Videos – fill horizontally, no black bars */
+      .project-gallery .image.fit video,
       .video-fit {
         width: 100%;
         height: auto;
-        border-radius: 0.7em;
-        display: block;
-      }
-
-      .video-fit,
-      .project-detail video,
-      .project-gallery video {
-        width: 100%;
-        height: auto;
-        max-height: 450px;   /* adjust as preferred */
+        max-height: 450px;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 0.6em;
         display: block;
         margin: 0 auto;
-      }
-
-      /* --------------------------------------------------
-         RESPONSIVE
-      -------------------------------------------------- */
-      @media screen and (max-width: 980px) {
-        #main {
-          margin-left: 0;
-        }
-        #header {
-          width: 100%;
-          position: relative;
-        }
+        background: none;
       }
     </style>
   </head>
+
   <body class="is-preload">
 
-    <!-- Header -->
+    <!-- Header (identical behavior/size to index.html) -->
     <div id="header">
 
       <div class="top">
@@ -139,7 +111,6 @@
 
       </div>
 
-   
       <div class="bottom">
         <!-- Social Icons -->
         <ul class="icons">
@@ -162,7 +133,7 @@
             <p>A selection of projects showcasing my work. Each one includes a short overview, a small image gallery, and a link to view more.</p>
           </header>
 
-          <!-- Project 1 -->
+          <!-- Project 1: Liquid Propulsion Lead -->
           <article class="project-block">
             <a href="project-liquid-propulsion.html" class="project-link">
               <header>
@@ -176,14 +147,14 @@
                 <!-- Left image (smaller) -->
                 <div class="col-4 col-12-mobile">
                   <span class="image fit">
-                    <img src="images/holding.png" alt="Project 1 screenshot 1" />
+                    <img src="images/Holding.png" alt="Liquid Propulsion Lead portrait" />
                   </span>
                 </div>
 
                 <!-- Right image (larger) -->
                 <div class="col-8 col-12-mobile">
                   <span class="image fit">
-                    <img src="images/team.JPG" alt="Project 1 screenshot 3" />
+                    <img src="images/team.JPG" alt="Liquid team photo" />
                   </span>
                 </div>
 
@@ -208,12 +179,12 @@
             </a>
           </article>
 
-          <!-- Project 2 -->
+          <!-- Project 2: AHPR -->
           <article class="project-block">
             <a href="project-AHPR.html" class="project-link">
               <header>
                 <h3>Advanced High Powered Rocketry Lead</h3>
-                <p class="subtitle">Two Stage Solid Rocket to 44,000 feet at Mach 2.7</p>
+                <p class="subtitle">Two stage solid rocket to 44,000 feet at Mach 2.7.</p>
               </header>
 
               <div class="row project-gallery">
@@ -221,7 +192,7 @@
                 <!-- First image -->
                 <div class="col-4 col-12-mobile">
                   <span class="image fit">
-                    <img src="images/Iwo.JPG" alt="Project 2 screenshot 1" />
+                    <img src="images/Iwo.JPG" alt="Rocket on rail" />
                   </span>
                 </div>
 
@@ -237,7 +208,7 @@
                 <!-- Third image -->
                 <div class="col-4 col-12-mobile">
                   <span class="image fit">
-                    <img src="images/Krakenfillets.JPG" alt="Project 2 screenshot 3" />
+                    <img src="images/Krakenfillets.JPG" alt="Filleted fins" />
                   </span>
                 </div>
 
@@ -251,48 +222,43 @@
             </a>
           </article>
 
-          <!-- Project 3 -->
+          <!-- Project 3: Roll-controlled rocket -->
           <article class="project-block">
             <a href="AMRAAM.html" class="project-link">
               <header>
                 <h3>Large Roll Controlled Rocket</h3>
-                <p class="subtitle">Acuated Canards to attempt to acheive roll control for honors thesis</p>
+                <p class="subtitle">Actuated canards to attempt to achieve roll control for honors thesis.</p>
               </header>
 
-           <h3>Gallery</h3>
+              <!-- Stacked images -->
+              <div class="row project-gallery" style="margin-top: 1.5em; display: flex; flex-direction: column; gap: 2em;">
 
-<!-- STACKED TOP IMAGES -->
-<div class="row project-gallery" style="margin-top: 1.5em; display: flex; flex-direction: column; gap: 2em;">
+                <!-- First image -->
+                <div class="col-12">
+                  <span class="image fit">
+                    <img src="images/AMRAAM_3ppl.HEIC" alt="Team with roll-controlled rocket" />
+                  </span>
+                </div>
 
-  <!-- First image -->
-  <div class="col-12">
-    <span class="image fit">
-      <img src="images/AMRAAM_3ppl.HEIC" alt="Team with rocket" />
-    </span>
-  </div>
+                <!-- Second image -->
+                <div class="col-12">
+                  <span class="image fit">
+                    <img src="images/onboard.png" alt="Onboard view" />
+                  </span>
+                </div>
 
-  <!-- Second image -->
-  <div class="col-12">
-    <span class="image fit">
-      <img src="images/onboard.png" alt="Onboard view" />
-    </span>
-  </div>
+              </div>
 
-</div>
-
-<!-- EXISTING VIDEO BELOW -->
-<div class="row project-gallery" style="margin-top: 2em;">
-  <div class="col-12">
-    <span class="image fit">
-      <video autoplay loop muted playsinline class="video-fit">
-        <source src="images/Rolling.mov" type="video/mp4" />
-      </video>
-    </span>
-  </div>
-</div>
-
-
-              <p></p>
+              <!-- Video -->
+              <div class="row project-gallery" style="margin-top: 2em;">
+                <div class="col-12">
+                  <span class="image fit">
+                    <video autoplay loop muted playsinline class="video-fit">
+                      <source src="images/Rolling.mov" type="video/mp4" />
+                    </video>
+                  </span>
+                </div>
+              </div>
 
               <ul class="actions">
                 <li>

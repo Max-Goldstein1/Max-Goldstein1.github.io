@@ -8,10 +8,17 @@
 
     <style>
       /* --------------------------------------------------
-         SIDEBAR TEXT SIZE + WIDTH (MATCH INDEX)
+         SIDEBAR TEXT SIZE + WIDTH (MATCH INDEX – DESKTOP ONLY)
       -------------------------------------------------- */
-      #header {
-        width: 19em; /* wider sidebar */
+      @media screen and (min-width: 981px) {
+        #header {
+          width: 19em; /* wider sidebar */
+        }
+
+        /* Main content shift to match larger sidebar */
+        #main {
+          margin-left: 19em;
+        }
       }
 
       #header #logo h1#title {
@@ -26,23 +33,12 @@
         font-size: 1.05em !important;
       }
 
-      /* Main content shift to match larger sidebar */
-      #main {
-        margin-left: 19em;
-      }
-
-      @media screen and (max-width: 980px) {
-        #main {
-          margin-left: 0;
-        }
-      }
-
       /* --------------------------------------------------
          GENERAL TEXT SIZE (MATCH INDEX)
       -------------------------------------------------- */
       body, p, li {
-        font-size: 1.45em;
-        line-height: 1.65em;
+        font-size: 1.05em;
+        line-height: 1.6em;
       }
 
       section#internships h2 {
@@ -56,7 +52,7 @@
 
       /* Slightly larger headings inside internships */
       section#internships h3 {
-        font-size: 1.7em;
+        font-size: 1.4em;
       }
 
       /* Keep gallery images nicely rounded */

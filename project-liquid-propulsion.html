@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
-      /* --------- Sidebar to match index/projects ---------- */
-      #header {
-        width: 19em;
+      /* --------- Sidebar to match index/projects (DESKTOP ONLY) ---------- */
+      @media screen and (min-width: 981px) {
+        #header {
+          width: 19em;
+        }
+
+        #main {
+          margin-left: 19em;
+        }
       }
 
       #header #logo h1#title {
@@ -24,19 +30,9 @@
         font-size: 1.05em !important;
       }
 
-      #main {
-        margin-left: 19em;
-      }
-
-      @media screen and (max-width: 980px) {
-        #main {
-          margin-left: 0;
-        }
-      }
-
       /* --------- General text size ---------- */
       body, p, li {
-        font-size: 1.25em;
+        font-size: 1.1em;
         line-height: 1.7em;
       }
 
@@ -72,7 +68,7 @@
 
       section.project-detail p,
       section.project-detail li {
-        font-size: 1.15em;
+        font-size: 1.05em;
         line-height: 1.7em;
         color: #f7f8ff;
       }
@@ -176,7 +172,7 @@
 
       <div class="bottom">
         <ul class="icons">
-          <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://www.linkedin.com/in/max-goldstein27" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
           <li><a href="mailto:mgoldstein42@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
       </div>
